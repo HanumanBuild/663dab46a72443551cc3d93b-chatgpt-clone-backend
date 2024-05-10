@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const axios = require('axios');
+// Ensure dotenv is configured
 require('dotenv').config();
 
 const app = express();
