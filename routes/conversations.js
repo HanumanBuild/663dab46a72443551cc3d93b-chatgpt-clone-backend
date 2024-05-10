@@ -8,7 +8,7 @@ router.get('/:id', async (req, res) => {
     const conversation = await Conversation.findById(req.params.id);
     res.json(conversation);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    res.status(404).json({ message: 'Conversation not found' });
   }
 });
 
